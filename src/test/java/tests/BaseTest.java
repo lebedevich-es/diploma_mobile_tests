@@ -19,8 +19,13 @@ public class BaseTest {
     @BeforeAll
     static void beforeAll() {
         switch (deviceHost) {
-            case "android", "ios" -> Configuration.browser = BrowserstackDriver.class.getName();
-            case "emulator" -> Configuration.browser = LocalMobileDriver.class.getName();
+            case "android":
+            case "ios":
+                Configuration.browser = BrowserstackDriver.class.getName();
+                break;
+            case "emulator":
+                Configuration.browser = LocalMobileDriver.class.getName();
+                break;
         }
         Configuration.browserSize = null;
     }
