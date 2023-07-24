@@ -7,6 +7,7 @@ import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
 
 public class Browserstack {
+
     static AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
 
     public static String videoUrl(String sessionId) {

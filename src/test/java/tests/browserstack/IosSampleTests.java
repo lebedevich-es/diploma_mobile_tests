@@ -1,5 +1,6 @@
 package tests.browserstack;
 
+import io.qameta.allure.Owner;
 import tests.BaseTest;
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.DisplayName;
@@ -11,6 +12,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 @Tag("ios")
+@DisplayName("Mobile tests for Wikipedia for iOS")
+@Owner("lebedevich-es")
 public class IosSampleTests extends BaseTest {
 
     @Test

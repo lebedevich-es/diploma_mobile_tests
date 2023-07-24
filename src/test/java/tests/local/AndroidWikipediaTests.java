@@ -1,11 +1,11 @@
 package tests.local;
 
-import io.qameta.allure.Feature;
-import tests.BaseTest;
 import io.appium.java_client.AppiumBy;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import tests.BaseTest;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
@@ -14,6 +14,8 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
 @Tag("android_local")
+@DisplayName("Mobile tests for Wikipedia for Android emulator")
+@Owner("lebedevich-es")
 public class AndroidWikipediaTests extends BaseTest {
 
     @Test

@@ -16,20 +16,20 @@
 ## :computer: Stack of technologies
 
 <p align="center">
-<img width="5%" title="Java" src="images/logo/Java.svg">
-<img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg">
-<img width="5%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="5%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="5%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="5%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="5%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="5%" title="Allure Report" src="images/logo/Allure.svg">
-<img width="5%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="5%" title="Telegram" src="images/logo/Telegram.svg">
-<img width="5%" title="Jira" src="images/logo/Jira.svg">
-<img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg">
-<img width="5%" title="Appium" src="images/logo/Appium.svg">
-<img width="5%" title="Browserstack" src="images/logo/Browserstack.svg">
+<a href="https://www.java.com/"><img width="5%" title="Java" src="images/logo/Java.svg"></a>
+<a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></a>
+<a href="https://github.com/"><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></a>
+<a href="https://junit.org/junit5/"><img width="5%" title="JUnit5" src="images/logo/JUnit5.svg"></a>
+<a href="https://gradle.org/"><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></a>
+<a href="https://selenide.org/"><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></a>
+<a href="https://docs.qameta.io/allure/"><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></a>
+<a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></a>
+<a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="images/logo/Jira.svg"></a>
+<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></a>
+<a href="https://appium.io/"><img width="5%" title="Appium" src="images/logo/Appium.svg"></a>
+<a href="https://www.browserstack.com/"><img width="5%" title="Browserstack" src="images/logo/Browserstack.svg"></a>
 </p>
 
 
@@ -51,6 +51,14 @@ gradle clean android -DdeviceHost=android
 
 ```
 gradle clean ios -DdeviceHost=ios
+```
+
+### File *auth.properties*
+To run tests locally in the browserstack, you need to add the <code>auth.properties</code> file to the resources folder <code>(src/test/resources/)</code>. The following properties must be specified in this file:
+```
+username=username
+accessKey=accessKey
+remoteUrl=http://hub.browserstack.com/wd/hub
 ```
 
 

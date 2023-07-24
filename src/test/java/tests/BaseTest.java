@@ -14,6 +14,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
+
     public static String deviceHost = System.getProperty("deviceHost");
 
     @BeforeAll

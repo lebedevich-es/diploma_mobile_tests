@@ -20,6 +20,7 @@ import static io.appium.java_client.remote.MobilePlatform.ANDROID;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalMobileDriver implements WebDriverProvider {
+
     static MobileConfig mobileConfig = ConfigFactory.create(MobileConfig.class, System.getProperties());
 
     public static URL getAppiumServerUrl() {
